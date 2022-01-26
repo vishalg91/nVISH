@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 15px;
+}
+.container .header {
+  margin-bottom: 20px;
+}
+.container section.body {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.container section.body .left-section {
+  flex: 1 1 20%;
+}
+.container section.body .left-section #userTable {
+  background-color: #eee;
+  width: 100%;
+  flex: 1 1 100%;
+  margin-bottom: 1em;
+}
+.container section.body .left-section #userTable thead tr th {
+  color: #0b9ce8;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container section.body .left-section #userTable thead tr th:nth-child(2) {
+  text-align: right;
+}
+.container section.body .left-section #userTable tbody tr td {
+  text-align: left;
+  padding: 5px 10px;
+}
+.container section.body .left-section #userTable tbody tr td:nth-child(2) {
+  text-align: right;
+}
+.container section.body .left-section ul {
+  background-color: #eee;
+  flex: 1 1 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+.container section.body .left-section ul li {
+  padding: 5px 10px;
+  white-space: nowrap;
+  color: #0b9ce8;
+  text-decoration: underline;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.container section.body .right-section {
+  flex: 1 1 70%;
+  overflow: hidden;
+}
+.container section.body .right-section .banner {
+  position: relative;
+}
+.container section.body .right-section .banner ul.slide-show {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+}
+.container section.body .right-section .banner ul.slide-show li {
+  min-width: 30.5%;
+  display: inline-block;
+  padding: 0 10px;
+}
+.container section.body .right-section .banner ul.slide-show li img {
+  width: 100%;
+  height: 210px;
+  margin: 0 auto;
+  display: block;
+}
+.container section.body .right-section .banner ul.slide-show li a.enroll-now {
+  padding: 8px 10px;
+  border: none;
+  background: no-repeat;
+  background-color: #0b9ce8;
+  color: white;
+  margin-top: 10px;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container section.body .right-section .banner ul.slide-show li:first-child {
+  padding-left: 0;
+}
+.container section.body .right-section .banner ul.slide-show li:last-child {
+  padding-right: 0;
+}
+.container section.body .right-section .banner .banner-btn {
+  position: absolute;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  padding: 10px;
+  line-height: 1;
+}
+.container section.body .right-section .banner .btn-left {
+  left: 0;
+}
+.container section.body .right-section .banner .btn-right {
+  right: 0;
+}
+.container section.body .right-section .menu-value {
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 20px;
+}
+.container section.body .right-section .menu-value h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.container section.body .right-section .menu-value p {
+  text-align: justify;
+}
+.container section.body .right-section .form {
+  background-color: #eee;
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.container section.body .right-section .form h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.container section.body .right-section .form .form-group {
+  width: 46%;
+  display: inline-block;
+  padding: 10px;
+}
+.container section.body .right-section .form .form-group label {
+  width: 100%;
+}
+.container section.body .right-section .form .form-group input.input-field {
+  width: calc(100% - 22px);
+  height: 34px;
+  border-radius: 4px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+.container section.body .right-section .form .submit-btn {
+  padding: 8px 10px;
+  border: none;
+  background: no-repeat;
+  background-color: #0b9ce8;
+  color: white;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  right: 0;
+  top: 20px;
+  float: right;
+}/*# sourceMappingURL=style.css.map */

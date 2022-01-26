@@ -1,0 +1,193 @@
+$blueColor: #0b9ce8;
+
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-size: 14px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 15px;
+    .header{
+        margin-bottom: 20px;
+    }
+    section.body{
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        .left-section{
+            flex: 1 1 20%;
+            #userTable{
+                background-color: #eee;
+                width: 100%;
+                flex: 1 1 100%;
+                margin-bottom: 1em;
+                thead{
+                    tr{
+                        th{
+                            color: $blueColor;
+                            text-align: left;
+                            border-bottom: 1px solid #ccc;
+                            padding: 10px;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            &:nth-child(2){
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            text-align: left;
+                            padding: 5px 10px;
+                            &:nth-child(2){
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+            ul{
+                background-color: #eee;
+                flex: 1 1 100%;
+                list-style-type: none;
+                margin: 0;
+                padding: 10px;
+                li{
+                    padding: 5px 10px;
+                    white-space: nowrap;
+                    color: $blueColor;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .right-section{
+            flex: 1 1 70%;
+            overflow: hidden;
+            .banner{
+                // background-color: #eee;
+                position: relative;
+                ul.slide-show{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    display: flex;
+                    li{
+                        // width: calc(100% / 3.1);
+                        min-width: 30.5%;
+                        display: inline-block;
+                        padding: 0 10px;
+                        img{
+                            width: 100%;
+                            height: 210px;
+                            margin: 0 auto;
+                            display: block;
+                        }
+                        a.enroll-now {
+                            padding: 8px 10px;
+                            border: none;
+                            background: no-repeat;
+                            background-color: $blueColor;
+                            color: white;
+                            margin-top: 10px;
+                            display: block;
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                        &:last-child{
+                            padding-right: 0;
+                        }
+                    }
+                }
+                .banner-btn{
+                    position: absolute;
+                    top: 40%;
+                    background-color: rgba(0,0,0,0.8);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    line-height: 1;
+                }
+                .btn-left{
+                    left: 0;
+                }
+                .btn-right{
+                    right: 0;
+                }
+            }
+            .menu-value{
+                padding: 20px;
+                background-color: #eee;
+                margin-top: 20px;
+                h4{
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                }
+                p{
+                    text-align: justify;
+                }
+            }
+            .form{
+                background-color: #eee;
+                margin-top: 20px;
+                padding: 20px;
+                margin-bottom: 30px;
+                h4{
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                }
+                .form-group{
+                    width: 46%;
+                    display: inline-block;
+                    padding: 10px;
+                    label{
+                        width: 100%;
+                    }
+                    input.input-field{
+                        width: calc(100% - 22px);
+                        height: 34px;
+                        border-radius: 4px;
+                        padding: 0 10px;
+                        border: 1px solid #ccc;
+                    }
+                }
+                .submit-btn{
+                    padding: 8px 10px;
+                    border: none;
+                    background: no-repeat;
+                    background-color: $blueColor;
+                    color: white;
+                    display: block;
+                    cursor: pointer;
+                    position: relative;
+                    right: 0;
+                    top: 20px;
+                    float: right;
+                }
+            }
+        }
+    }
+}

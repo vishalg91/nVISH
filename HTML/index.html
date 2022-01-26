@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>nVISH</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../images/top-logo.png" alt="logo" />
+        </div>
+        <section class="body">
+            <div class="left-section">
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('name')">Name&nbsp;&nbsp;<i class="fa fa-sort-desc"></i></th>
+                            <th onclick="sortTable('age')">Age&nbsp;&nbsp;<i class="fa fa-sort-desc"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <ul id="leftMenu"></ul>
+            </div>
+            <div class="right-section">
+                <div class="banner">
+                    <ul class="slide-show" id="slideShow"></ul>
+                    <button class="banner-btn btn-left" onclick="plusDivs('minus')">&#10094;</button>
+                    <button class="banner-btn btn-right" onclick="plusDivs('plus')">&#10095;</button>
+                </div>
+                <section class="menu-value" id="rightValues"></section>
+                <section class="form" id="enrollNow">
+                    <h4>Enroll Now</h4>
+                    <form>
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" class="input-field" name="firstName" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" class="input-field" name="lastName" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="input-field" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Email Address</label>
+                            <input type="email" class="input-field" name="confirmEmail" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <input type="number" class="input-field" name="mobile" required />
+                        </div>
+                        <div class="form-group" style="text-align: right;">
+                            <input type="submit" class="submit-btn"></button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </div>
+    <script src="../JS/jquery-3.3.1.min.js"></script>
+    <script src="../JS/style.js"></script>
+</body>
+
+</html>
